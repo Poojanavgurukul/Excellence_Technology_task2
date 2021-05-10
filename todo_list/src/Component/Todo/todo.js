@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Input extends React.Component {
+class Todo extends React.Component {
     state={
         todos:[],
         text:''
@@ -42,4 +42,4 @@ class Input extends React.Component {
         );
     }
 }
-export default Input;
+export default Todo;
