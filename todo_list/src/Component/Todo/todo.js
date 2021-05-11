@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Todo/todo.css'
 
 class Todo extends React.Component {
     state={
@@ -34,9 +35,9 @@ class Todo extends React.Component {
         });
         return(
             <div>
-                <h2>Todo List</h2>
-                <input type="text" placeholder="Enter list...." value={this.state.text} onChange={this.handleChange} className="Value"></input>
-                <button onClick={this.addtodo}>Add Todo</button>
+                <h2 className="heading">Todo List</h2>
+                <input type="text" placeholder="Enter list...." value={this.state.text} onChange={this.handleChange} className="input"></input>
+                <button onClick={this.addtodo} className="btn">Add Todo</button>
                 {this.state.todos.length === 0 ? <h1></h1>:<ol>{displayTodo}</ol>}
             </div>
         );
